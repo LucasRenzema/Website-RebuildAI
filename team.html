@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team | ReBuild AI</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Inter', 'sans-serif'], },
-                    colors: { emerald: { 400: '#34d399', 800: '#065f46', 900: '#064e3b', } }
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        emerald: {
+                            400: '#34d399', 
+                            800: '#065f46', 
+                            900: '#064e3b', 
+                        }
+                    }
                 }
             }
         }
     </script>
 </head>
-<body class="font-sans bg-slate-50 text-gray-800 antialiased">
+<body class="font-sans bg-slate-50 text-gray-800 antialiased selection:bg-emerald-400 selection:text-emerald-900">
 
     <nav class="sticky top-0 w-full bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,63 +40,90 @@
                     <i class="fa-solid fa-layer-group text-emerald-800 text-2xl"></i>
                     <span class="font-bold text-2xl tracking-tight text-emerald-900">ReBuild AI</span>
                 </a>
+                
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors"><i class="fa-solid fa-arrow-left mr-2"></i> Terug naar Home</a>
+                    <a href="index.html" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors">Home</a>
+                    <a href="missie.html" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors">Missie</a>
+                    <a href="tarieven.html" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors">Tarieven</a>
+                    <a href="offerte.html" class="bg-emerald-800 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-emerald-900 transition-all shadow-lg">Offerte Aanvragen</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-emerald-900 mb-6">Ontmoet ons Team</h1>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Samen bouwen we aan een circulaire toekomst. De experts achter de technologie van ReBuild AI.</p>
+    <header class="py-20 bg-white border-b border-gray-100 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-emerald-900 mb-6">Het Team achter ReBuild AI</h1>
+            <p class="text-xl text-gray-600 leading-relaxed">
+                Een multidisciplinair team van experts met één gezamenlijk doel: de bouwsector klaarmaken voor een circulaire toekomst.
+            </p>
         </div>
+    </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition text-center">
-                <div class="w-24 h-24 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-3xl mx-auto mb-4"><i class="fa-solid fa-user-tie"></i></div>
-                <h3 class="text-xl font-bold text-emerald-900">[Naam 1]</h3>
-                <p class="text-emerald-600 font-medium mb-3">Chief Executive Officer (CEO)</p>
-                <p class="text-gray-500 text-sm">Verantwoordelijk voor de algemene strategie, visie en het pitchen van onze missie aan investeerders.</p>
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center">
+                <div class="w-24 h-24 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-900">Lucas Renzema</h3>
+                <p class="text-emerald-600 font-semibold uppercase tracking-wider text-sm mb-4">CEO</p>
+                <p class="text-gray-500 text-sm italic">Eindverantwoordelijk voor de strategische koers en de visie van de XT-490 Assimilators.</p>
             </div>
 
-            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition text-center">
-                <div class="w-24 h-24 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-3xl mx-auto mb-4"><i class="fa-solid fa-code"></i></div>
-                <h3 class="text-xl font-bold text-emerald-900">[Naam 2]</h3>
-                <p class="text-emerald-600 font-medium mb-3">Product Manager</p>
-                <p class="text-gray-500 text-sm">Leidt de ontwikkeling van het AI-platform en waarborgt de technische haalbaarheid in de praktijk.</p>
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center">
+                <div class="w-24 h-24 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-900">Mats van den Berg</h3>
+                <p class="text-emerald-600 font-semibold uppercase tracking-wider text-sm mb-4">Product Manager</p>
+                <p class="text-gray-500 text-sm italic">Leidt de ontwikkeling van onze Multimodale AI en zorgt voor een naadloze user experience.</p>
             </div>
 
-            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition text-center">
-                <div class="w-24 h-24 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-3xl mx-auto mb-4"><i class="fa-solid fa-chart-line"></i></div>
-                <h3 class="text-xl font-bold text-emerald-900">[Naam 3]</h3>
-                <p class="text-emerald-600 font-medium mb-3">Business Development Manager</p>
-                <p class="text-gray-500 text-sm">Verantwoordelijk voor de go-to-market strategie en het vinden van de juiste doelgroep.</p>
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center">
+                <div class="w-24 h-24 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-900">Marit Braakhuis</h3>
+                <p class="text-emerald-600 font-semibold uppercase tracking-wider text-sm mb-4">Business Development Manager</p>
+                <p class="text-gray-500 text-sm italic">Verantwoordelijk voor strategische partnerschappen binnen de bouw- en vastgoedsector.</p>
             </div>
 
-            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition text-center">
-                <div class="w-24 h-24 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-3xl mx-auto mb-4"><i class="fa-solid fa-coins"></i></div>
-                <h3 class="text-xl font-bold text-emerald-900">[Naam 4]</h3>
-                <p class="text-emerald-600 font-medium mb-3">Finance Manager</p>
-                <p class="text-gray-500 text-sm">Beheert de financiële projecties, de operationele kosten en de investeringsaanvraag.</p>
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center">
+                <div class="w-24 h-24 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-900">Reinder Bruin</h3>
+                <p class="text-emerald-600 font-semibold uppercase tracking-wider text-sm mb-4">Finance Manager</p>
+                <p class="text-gray-500 text-sm italic">Beheert de financiële planning, ROI-modellen en de schaalbaarheid van onze SaaS-omzet.</p>
             </div>
 
-            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition text-center">
-                <div class="w-24 h-24 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-3xl mx-auto mb-4"><i class="fa-solid fa-bullhorn"></i></div>
-                <h3 class="text-xl font-bold text-emerald-900">[Naam 5]</h3>
-                <p class="text-emerald-600 font-medium mb-3">Marketing Manager</p>
-                <p class="text-gray-500 text-sm">Ontwerpt de merkidentiteit, de website en zorgt voor een visueel aantrekkelijke boodschap.</p>
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center">
+                <div class="w-24 h-24 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-900">Vera Roessink</h3>
+                <p class="text-emerald-600 font-semibold uppercase tracking-wider text-sm mb-4">Marketing Manager</p>
+                <p class="text-gray-500 text-sm italic">Zorgt voor de positionering van ReBuild AI als marktleider in circulaire data-analyse.</p>
             </div>
 
-            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition text-center">
-                <div class="w-24 h-24 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-3xl mx-auto mb-4"><i class="fa-solid fa-scale-balanced"></i></div>
-                <h3 class="text-xl font-bold text-emerald-900">[Naam 6]</h3>
-                <p class="text-emerald-600 font-medium mb-3">Legal & Compliance Manager</p>
-                <p class="text-gray-500 text-sm">Bewaakt de due diligence rondom duurzaamheid, AI-ethiek en investeerdersrisico's.</p>
+            <div class="bg-emerald-900 p-8 rounded-3xl border border-emerald-800 shadow-lg text-center text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-16 h-16 bg-emerald-800 rounded-bl-3xl opacity-50"></div>
+                <div class="w-24 h-24 bg-emerald-800 text-emerald-400 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 border border-emerald-700">
+                    <i class="fa-solid fa-gavel"></i>
+                </div>
+                <h3 class="text-2xl font-bold">Lucas Renzema & <br>Vera Roessink</h3>
+                <p class="text-emerald-400 font-semibold uppercase tracking-wider text-sm mb-4">Legal & Compliance</p>
+                <p class="text-emerald-100/70 text-sm italic">Waarborgen dat al onze AI-processen voldoen aan de strengste CSRD- en AVG-normen.</p>
             </div>
+
         </div>
     </section>
+
+    <footer class="bg-emerald-950 text-emerald-100 py-12 text-center">
+        <p class="text-sm opacity-60">&copy; 2026 ReBuild AI. Alle rechten voorbehouden.</p>
+    </footer>
 
 </body>
 </html>
