@@ -76,7 +76,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative z-10 md:flex md:items-center md:gap-16">
             
             <div class="md:w-1/2 text-center md:text-left flex flex-col md:items-start items-center">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 text-emerald-800 text-sm font-semibold mb-6 border border-emerald-200 shadow-inner">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 text-emerald-800 text-sm font-semibold mb-6 border border-emerald-200">
                     <i class="fa-solid fa-shield-check text-emerald-600"></i> CSRD & EU Taxonomy Compliant
                 </div>
                 <h1 class="text-5xl md:text-6xl font-extrabold text-emerald-900 tracking-tight leading-tight mb-6">
@@ -100,7 +100,6 @@
             
         </div>
     </section>
-
     <section class="py-12 bg-emerald-900 text-white relative overflow-hidden border-y border-emerald-950">
         <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4=')]"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
@@ -227,4 +226,197 @@
                             <div class="flex justify-between items-end mb-1">
                                 <div>
                                     <span class="font-semibold text-gray-700 block">Vlakglas & Hardhouten Kozijnen</span>
-                                    <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-semibold
+                                    <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-semibold mt-1 inline-block"><i class="fa-solid fa-check-circle mr-1"></i> 92% Zekerheid (Visuele Herkenning)</span>
+                                </div>
+                                <span class="text-gray-600 font-bold text-sm">485 ton (10%)</span>
+                            </div>
+                            <div class="w-full bg-gray-100 rounded-full h-2.5 mt-2">
+                                <div class="bg-emerald-400 h-2.5 rounded-full" style="width: 10%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-end mb-1">
+                                <div>
+                                    <span class="font-semibold text-gray-700 block">Koper & Bekabeling (E-Installaties)</span>
+                                    <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-semibold mt-1 inline-block"><i class="fa-solid fa-check-circle mr-1"></i> 88% Zekerheid (Tekening & Symbolen)</span>
+                                </div>
+                                <span class="text-gray-600 font-bold text-sm">265 ton (5%)</span>
+                            </div>
+                            <div class="w-full bg-gray-100 rounded-full h-2.5 mt-2">
+                                <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 5%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="py-24 bg-gray-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-emerald-900/20 transform skew-x-12 translate-x-32 hidden lg:block"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">Bereken uw directe ROI</h2>
+                    <p class="text-gray-400 mb-8 text-lg">Ontdek hoeveel tijd, geld en CO2 u bespaart per project.</p>
+                    
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-2xl">
+                        <label for="sqm-slider" class="block text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-4">Grootte van het gebouw (m²)</label>
+                        <div class="flex items-center gap-4 mb-6">
+                            <input type="range" id="sqm-slider" min="500" max="50000" step="500" value="12500" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-emerald-500">
+                        </div>
+                        <div class="relative">
+                            <input type="number" id="sqm-input" value="12500" min="500" max="50000" class="w-full bg-gray-900 border border-gray-600 text-white text-xl font-bold rounded-lg p-4 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition-colors">
+                            <span class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 font-bold">m²</span>
+                        </div>
+                        
+                        <p class="mt-4 text-xs text-gray-400 italic leading-relaxed">* Deze inschattingen worden gebaseerd op eerdere projectdata, historische data uit de sector, en landelijke AI gemiddelden. Voor een exact beeld, vraag een offerte aan.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-700/50">
+                        <div class="text-emerald-400 mb-2"><i class="fa-solid fa-clock text-xl"></i></div>
+                        <div class="text-sm text-gray-400 font-medium mb-1">Bespaarde Consultancy Uren</div>
+                        <div class="text-4xl font-extrabold text-white"><span id="res-hours">625</span> <span class="text-xl text-gray-500 font-normal">uur</span></div>
+                    </div>
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-emerald-900/50 relative overflow-hidden">
+                        <div class="text-emerald-400 mb-2"><i class="fa-solid fa-euro-sign text-xl"></i></div>
+                        <div class="text-sm text-gray-400 font-medium mb-1">Herwonnen Materiaalwaarde</div>
+                        <div class="text-4xl font-extrabold text-white flex items-baseline gap-1"><span class="text-2xl text-emerald-500">€</span><span id="res-value">187.500</span></div>
+                    </div>
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-700/50 sm:col-span-2">
+                        <div class="text-emerald-400 mb-2"><i class="fa-solid fa-cloud text-xl"></i></div>
+                        <div class="text-sm text-gray-400 font-medium mb-1">Potentiële CO2 Besparing</div>
+                        <div class="text-5xl font-extrabold text-white"><span id="res-co2">2.500</span> <span class="text-2xl text-gray-500 font-normal">ton</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="esg" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-emerald-900 mb-4">Enterprise Grade & ESG Compliant</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">AI inzetten betekent verantwoordelijkheid nemen. Wij beschermen uw data én de planeet.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-emerald-900 mb-2">Human-in-the-Loop Validatie</h4>
+                            <p class="text-gray-600">Technologie is een hulpmiddel, geen blind vertrouwen. Bij een AI-zekerheidsscore <b>onder de 90%</b> wordt het materialenpaspoort automatisch geflagd en verplicht doorgestuurd naar een menselijke expert voor handmatige verificatie.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-emerald-900 mb-2">Absolute Datasoevereiniteit</h4>
+                            <p class="text-gray-600">Uw bouwtekeningen zijn uw intellectueel eigendom. Klantdata is strikt gescheiden en wordt nooit gebruikt om publieke AI-modellen te trainen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 flex flex-col justify-center items-center gap-8">
+                    <h4 class="text-gray-400 font-semibold uppercase tracking-widest text-sm">Certificeringen</h4>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <div class="flex flex-col items-center justify-center w-32 h-32 border-2 border-emerald-800 rounded-full bg-emerald-50 text-emerald-900">
+                            <i class="fa-solid fa-lock text-2xl mb-1 text-emerald-700"></i>
+                            <span class="font-bold text-sm">ISO 27001</span>
+                            <span class="text-[10px] text-emerald-700 uppercase">Certified</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center w-32 h-32 border-2 border-emerald-800 rounded-full bg-emerald-50 text-emerald-900">
+                            <i class="fa-solid fa-check-double text-2xl mb-1 text-emerald-700"></i>
+                            <span class="font-bold text-sm">SOC 2</span>
+                            <span class="text-[10px] text-emerald-700 uppercase">Type II</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-emerald-950 text-emerald-100 py-12 border-t border-emerald-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-layer-group text-emerald-400 text-2xl"></i>
+                        <span class="font-bold text-2xl tracking-tight text-white">ReBuild AI</span>
+                    </div>
+                    <p class="text-emerald-300 max-w-sm mb-6">Smeden van een zero-waste bouwecosysteem door ongestructureerde data te transformeren in direct inzetbare intelligentie.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#hoe-het-werkt" class="hover:text-white transition-colors">Hoe het werkt</a></li>
+                        <li><a href="tarieven.html" class="hover:text-white transition-colors">Tarieven</a></li>
+                        <li><a href="#calculator" class="hover:text-white transition-colors">ROI Calculator</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm">Bedrijf</h4>
+                    <ul class="space-y-2">
+                        <li><a href="missie.html" class="hover:text-white transition-colors">Onze Missie</a></li>
+                        <li><a href="team.html" class="hover:text-white transition-colors">Team</a></li>
+                        <li><a href="offerte.html" class="hover:text-white transition-colors">Offerte</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm">Juridisch</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Statement</a></li>
+                        <li><a href="voorwaarden.html" class="hover:text-white transition-colors">Voorwaarden</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-emerald-900 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-emerald-400/60">&copy; 2026 ReBuild AI. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+            const slider = document.getElementById('sqm-slider');
+            const input = document.getElementById('sqm-input');
+            const resHours = document.getElementById('res-hours');
+            const resValue = document.getElementById('res-value');
+            const resCo2 = document.getElementById('res-co2');
+
+            const formatNumber = (num) => Math.round(num).toLocaleString('nl-NL');
+
+            const calculateResults = (sqm) => {
+                resHours.textContent = formatNumber(sqm * 0.05);
+                resValue.textContent = formatNumber(sqm * 15);
+                resCo2.textContent = formatNumber(sqm * 0.2);
+            };
+
+            slider.addEventListener('input', (e) => {
+                input.value = e.target.value;
+                calculateResults(e.target.value);
+            });
+
+            input.addEventListener('input', (e) => {
+                let val = parseInt(e.target.value) || 0;
+                if(val > 50000) val = 50000;
+                slider.value = val;
+                calculateResults(val);
+            });
+
+            calculateResults(slider.value);
+        });
+    </script>
+</body>
+</html>
