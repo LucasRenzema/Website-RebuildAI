@@ -3,54 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReBuild AI | Circulaire Materialenpaspoorten</title>
+    <title>ReBuild AI | Circulaire Materialenpaspoorten & CSRD Compliance</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Inter', 'sans-serif'], },
-                    colors: { emerald: { 400: '#34d399', 800: '#065f46', 900: '#064e3b', } }
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        emerald: {
+                            400: '#34d399', 
+                            800: '#065f46', 
+                            900: '#064e3b', 
+                        }
+                    }
                 }
             }
         }
     </script>
 </head>
-<body class="font-sans bg-slate-50 text-gray-800 antialiased selection:bg-emerald-400 selection:text-emerald-900">
+<body class="font-sans bg-white text-gray-800 antialiased selection:bg-emerald-400 selection:text-emerald-900">
 
-    <!-- 1. Navigatiebalk -->
     <nav class="sticky top-0 w-full bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 cursor-pointer hover:opacity-80 transition">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
                     <i class="fa-solid fa-layer-group text-emerald-800 text-2xl"></i>
                     <span class="font-bold text-2xl tracking-tight text-emerald-900">ReBuild AI</span>
-                </a>
+                </div>
+                
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html" class="text-emerald-800 font-bold border-b-2 border-emerald-800 pb-1">Hoe het werkt</a>
+                    <a href="#hoe-het-werkt" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors">Hoe het werkt</a>
                     <a href="missie.html" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors">Onze Missie</a>
-                    <a href="#roi" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors">ROI Calculator</a>
+                    <a href="#calculator" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors">ROI Calculator</a>
                     <a href="#esg" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors">ESG & Security</a>
                     <a href="tarieven.html" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors">Tarieven</a>
                     <a href="team.html" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors">Team</a>
                     <a href="offerte.html" class="bg-emerald-800 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-emerald-900 transition-all shadow-lg hover:shadow-emerald-800/30">Offerte Aanvragen</a>
                 </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-emerald-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
             </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-4 space-y-2 shadow-lg">
+            <a href="#hoe-het-werkt" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-emerald-800 hover:bg-gray-50">Hoe het werkt</a>
+            <a href="missie.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-emerald-800 hover:bg-gray-50">Onze Missie</a>
+            <a href="#calculator" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-emerald-800 hover:bg-gray-50">ROI Calculator</a>
+            <a href="#esg" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-emerald-800 hover:bg-gray-50">ESG & Security</a>
+            <a href="tarieven.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-emerald-800 hover:bg-gray-50">Tarieven</a>
+            <a href="team.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-emerald-800 hover:bg-gray-50">Team</a>
+            <a href="offerte.html" class="block mt-2 px-3 py-2 rounded-md text-base font-medium bg-emerald-100 text-emerald-800 text-center">Offerte Aanvragen</a>
         </div>
     </nav>
 
-    <!-- 2. Hero Sectie (Twee-kolommen layout) -->
     <section class="relative bg-slate-50 overflow-hidden border-b border-gray-100">
-        <!-- Achtergrondgraphic (Lichte textuur) -->
         <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiNFMkU4RjAiLz48L3N2Zz4=')] opacity-50 z-0"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative z-10 md:flex md:items-center md:gap-16">
             
-            <!-- Linker Kolom: Tekst en Actieknop -->
             <div class="md:w-1/2 text-center md:text-left flex flex-col md:items-start items-center">
                 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 text-emerald-800 text-sm font-semibold mb-6 border border-emerald-200 shadow-inner">
                     <i class="fa-solid fa-shield-check text-emerald-600"></i> CSRD & EU Taxonomy Compliant
@@ -62,44 +86,145 @@
                 <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto md:mx-0 leading-relaxed">
                     Zet ongestructureerde archieven om in circulaire materialenpaspoorten en voldoe direct aan de verplichte Europese <b>CSRD-regelgeving</b> voor de bouw. Gedreven door Multimodale AI.
                 </p>
-                <a href="offerte.html" class="bg-emerald-800 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-900 transition-all shadow-xl hover:shadow-emerald-800/40 flex items-center justify-center md:justify-start gap-2 max-w-xs md:max-w-none">
-                    Start uw ESG Rapportage <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="offerte.html" class="bg-emerald-800 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-900 transition-all shadow-xl hover:shadow-emerald-800/40 flex items-center justify-center gap-2">
+                        Start uw ESG Rapportage <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
 
-            <!-- Rechter Kolom: Afbeelding (Het Probleem) -->
             <div class="md:w-1/2 mt-16 md:mt-0 relative">
                 <div class="absolute inset-0 bg-emerald-100 rounded-3xl transform skew-y-2 scale-105 z-0"></div>
                 <img src="archive.png" alt="Het probleem: de chaos van ongestructureerde bouwarchieven" class="w-full h-auto rounded-3xl shadow-2xl object-cover object-center relative z-10 border border-gray-100" />
             </div>
+            
         </div>
     </section>
 
-    <!-- 3. Onze Missie Teaser -->
-    <section class="bg-emerald-900 py-16">
+    <section class="py-12 bg-emerald-900 text-white relative overflow-hidden border-y border-emerald-950">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4=')]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="md:w-2/3">
+                <h2 class="text-emerald-400 font-bold uppercase tracking-widest text-sm mb-3"><i class="fa-solid fa-earth-europe mr-2"></i>Onze Missie</h2>
+                <p class="text-lg text-emerald-50 leading-relaxed font-medium">
+                    De bouwsector staat voor een enorme opgave: de snelle transitie naar een circulaire economie. Wij transformeren verborgen data uit oude archieven in direct inzetbare, circulaire intelligentie. Zo voorkomen we onnodig bouwafval en maken we datagedreven hergebruik van materialen de winstgevende standaard.
+                </p>
+            </div>
+            <div class="md:w-1/3 flex justify-start md:justify-end w-full">
+                <a href="missie.html" class="inline-flex items-center justify-center gap-2 bg-emerald-400 text-emerald-950 w-full md:w-auto px-6 py-4 rounded-xl font-bold hover:bg-emerald-300 transition-colors shadow-lg">
+                    Lees hier meer over onze missie <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="hoe-het-werkt" class="py-24 bg-white border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-                <div class="md:w-2/3">
-                    <div class="flex items-center gap-2 text-emerald-400 font-bold tracking-widest uppercase text-sm mb-4">
-                        <i class="fa-solid fa-earth-europe"></i> Onze Missie
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-emerald-900 mb-4">Van archief naar inzicht in 3 stappen</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Geen handmatig rekenwerk of wekenlang spitten in PDF's meer. Onze AI doet het zware werk.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow relative">
+                    <div class="w-16 h-16 bg-white rounded-xl shadow-sm flex items-center justify-center text-emerald-800 text-2xl mb-6 border border-gray-100">
+                        <i class="fa-solid fa-file-upload"></i>
                     </div>
-                    <p class="text-emerald-50 text-xl leading-relaxed">
-                        De bouwsector staat voor een enorme opgave: de snelle transitie naar een circulaire economie. Wij transformeren verborgen data uit oude archieven in direct inzetbare, circulaire intelligentie. Zo voorkomen we onnodig bouwafval en maken we datagedreven hergebruik van materialen de winstgevende standaard.
-                    </p>
+                    <div class="absolute top-8 right-8 text-6xl font-black text-gray-200/50">1</div>
+                    <h3 class="text-xl font-bold text-emerald-900 mb-3">Upload Data</h3>
+                    <p class="text-gray-600">Verzamel oude PDF's, CAD-files en blauwdrukken. Sleep ze veilig naar onze afgeschermde cloudomgeving.</p>
                 </div>
-                <div class="md:w-1/3 flex justify-start md:justify-end">
-                    <a href="missie.html" class="bg-emerald-400 text-emerald-950 px-6 py-3 rounded-lg font-bold hover:bg-emerald-300 transition-colors shadow-lg">
-                        Lees hier meer over onze missie <i class="fa-solid fa-arrow-right ml-2"></i>
-                    </a>
+
+                <div class="bg-emerald-800 rounded-2xl p-8 shadow-xl relative overflow-hidden transform md:-translate-y-4">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-700 rounded-full filter blur-2xl opacity-50 -mr-10 -mt-10"></div>
+                    <div class="w-16 h-16 bg-emerald-900/50 rounded-xl flex items-center justify-center text-emerald-400 text-2xl mb-6 border border-emerald-700 relative z-10">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <div class="absolute top-8 right-8 text-6xl font-black text-emerald-900/40">2</div>
+                    <h3 class="text-xl font-bold text-white mb-3 relative z-10">AI Assimilatie</h3>
+                    <p class="text-emerald-100 relative z-10">Ons model leest de tekeningen, herkent de materialen contextueel en berekent de exacte herbruikbare volumes.</p>
+                </div>
+
+                <div class="bg-slate-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow relative">
+                    <div class="w-16 h-16 bg-white rounded-xl shadow-sm flex items-center justify-center text-emerald-800 text-2xl mb-6 border border-gray-100">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="absolute top-8 right-8 text-6xl font-black text-gray-200/50">3</div>
+                    <h3 class="text-xl font-bold text-emerald-900 mb-3">Oogst Inzichten</h3>
+                    <p class="text-gray-600">Exporteer direct een ESG-klaar materialenpaspoort. Inclusief CO2-besparingen en financiële restwaarde.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-emerald-950 text-emerald-100 py-8 border-t border-emerald-900 text-center">
-        <p class="text-sm text-emerald-400/60">&copy; 2026 ReBuild AI. Alle rechten voorbehouden.</p>
-    </footer>
+    <section class="py-24 bg-slate-50 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-emerald-600 font-bold tracking-wider uppercase text-sm mb-2 block">De Output</span>
+                <h2 class="text-3xl font-bold text-emerald-900 mb-4">Dit is uw Materialenpaspoort</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Binnen enkele seconden na de upload krijgt u dit gestructureerde dashboard voor uw aannemer en ESG-rapportage.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-300">
+                <div class="bg-emerald-950 px-6 py-5 md:px-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <div>
+                        <h3 class="text-white font-bold text-xl"><i class="fa-solid fa-building text-emerald-400 mr-2"></i> Project: Renovatie 'De Kameleon'</h3>
+                        <p class="text-emerald-400/60 text-sm mt-1">AI Scan voltooid op: 4 mei 2026 | Oppervlakte: 12.500 m²</p>
+                    </div>
+                    <div class="flex gap-2 w-full sm:w-auto">
+                        <button class="bg-emerald-800 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition"><i class="fa-solid fa-file-pdf mr-2"></i> PDF</button>
+                        <button class="bg-emerald-800 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition"><i class="fa-solid fa-file-excel mr-2"></i> CSV</button>
+                    </div>
+                </div>
+                
+                <div class="p-6 md:p-8">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-gray-100">
+                            <p class="text-xs text-gray-500 font-semibold uppercase mb-1">Totaal Volume</p>
+                            <p class="text-2xl font-black text-emerald-900">4.850 <span class="text-base font-normal text-gray-500">ton</span></p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-gray-100">
+                            <p class="text-xs text-gray-500 font-semibold uppercase mb-1">Herbruikbaar</p>
+                            <p class="text-2xl font-black text-emerald-900">82 <span class="text-base font-normal text-gray-500">%</span></p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-gray-100">
+                            <p class="text-xs text-gray-500 font-semibold uppercase mb-1">Financiële Waarde</p>
+                            <p class="text-2xl font-black text-emerald-600">€ 187.5K</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-gray-100">
+                            <p class="text-xs text-gray-500 font-semibold uppercase mb-1">CO2 Reductie</p>
+                            <p class="text-2xl font-black text-emerald-600">2.500 <span class="text-base font-normal text-gray-500">ton</span></p>
+                        </div>
+                    </div>
 
-</body>
-</html>
+                    <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">Uitsplitsing Gedetecteerde Materialen & AI Zekerheid</h4>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between items-end mb-1">
+                                <div>
+                                    <span class="font-semibold text-gray-700 block">Beton (Gewapend C20/25)</span>
+                                    <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-semibold mt-1 inline-block"><i class="fa-solid fa-check-circle mr-1"></i> 98% Zekerheid (Bestek Match)</span>
+                                </div>
+                                <span class="text-gray-600 font-bold text-sm">2.900 ton (60%)</span>
+                            </div>
+                            <div class="w-full bg-gray-100 rounded-full h-2.5 mt-2">
+                                <div class="bg-gray-400 h-2.5 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-end mb-1">
+                                <div>
+                                    <span class="font-semibold text-gray-700 block">Constructiestaal (Vermoedelijk S235)</span>
+                                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded-full font-semibold mt-1 inline-block"><i class="fa-solid fa-triangle-exclamation mr-1"></i> 65% Zekerheid (Historische Data) - Labtest aanbevolen</span>
+                                </div>
+                                <span class="text-gray-600 font-bold text-sm">1.200 ton (25%)</span>
+                            </div>
+                            <div class="w-full bg-gray-100 rounded-full h-2.5 mt-2">
+                                <div class="bg-emerald-600 h-2.5 rounded-full" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-end mb-1">
+                                <div>
+                                    <span class="font-semibold text-gray-700 block">Vlakglas & Hardhouten Kozijnen</span>
+                                    <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-semibold
