@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarieven | ReBuild AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,8 +20,9 @@
         }
     </script>
 </head>
-<body class="font-sans bg-slate-50 text-gray-800 antialiased">
+<body class="font-sans bg-slate-50 text-gray-800 antialiased selection:bg-emerald-400 selection:text-emerald-900">
 
+    <!-- Navigatiebalk -->
     <nav class="sticky top-0 w-full bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
@@ -28,71 +31,90 @@
                     <span class="font-bold text-2xl tracking-tight text-emerald-900">ReBuild AI</span>
                 </a>
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors"><i class="fa-solid fa-arrow-left mr-2"></i> Terug naar Home</a>
+                    <a href="index.html" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors">Hoe het werkt</a>
+                    <a href="missie.html" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors">Onze Missie</a>
+                    <a href="tarieven.html" class="text-emerald-800 font-bold border-b-2 border-emerald-800 pb-1">Tarieven</a>
+                    <a href="team.html" class="text-gray-600 hover:text-emerald-800 font-medium transition-colors">Team</a>
                     <a href="offerte.html" class="bg-emerald-800 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-emerald-900 transition-all shadow-lg hover:shadow-emerald-800/30">Offerte Aanvragen</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-emerald-900 mb-6">Transparante Tarieven</h1>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Kies voor structurele innovatie of flexibele projectondersteuning.</p>
+    <!-- Header -->
+    <header class="py-20 bg-white border-b border-gray-100 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiNFMkU4RjAiLz48L3N2Zz4=')] opacity-50 z-0"></div>
+        <div class="max-w-3xl mx-auto px-4 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-emerald-900 mb-6">Transparante Investeringen. <br><span class="text-emerald-600">Directe ROI.</span></h1>
+            <p class="text-lg text-gray-600">Elimineer dure consultancy-uren en versnel uw CSRD-rapportages met onze schaalbare AI-licenties. Kies het model dat bij uw projectvolume past.</p>
         </div>
+    </header>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto items-stretch">
+    <!-- Tarieven Cards -->
+    <main class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
             
-            <div class="bg-emerald-800 rounded-3xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden flex flex-col">
-                <div class="absolute top-0 right-0 w-48 h-48 bg-emerald-700 rounded-full filter blur-3xl opacity-50 -mr-20 -mt-20"></div>
-                <div class="relative z-10 flex-grow">
-                    <span class="inline-block px-4 py-1 rounded-full bg-emerald-400/20 text-emerald-300 text-sm font-semibold mb-6 border border-emerald-400/30">Meest gekozen</span>
-                    <h2 class="text-4xl font-bold mb-4">Enterprise Licentie</h2>
-                    <p class="text-emerald-100/80 mb-8 text-lg leading-relaxed">De volledige kracht van ReBuild AI voor organisaties die structureel willen verduurzamen en data-gedreven willen werken.</p>
-                    
-                    <div class="mb-10">
-                        <span class="text-6xl font-extrabold">€1.950</span>
-                        <span class="text-emerald-200 text-xl">/ maand</span>
-                    </div>
-
-                    <ul class="space-y-5 mb-12">
-                        <li class="flex items-center gap-4 text-lg"><i class="fa-solid fa-check-circle text-emerald-400"></i> Onbeperkt aantal gebruikers</li>
-                        <li class="flex items-center gap-4 text-lg"><i class="fa-solid fa-check-circle text-emerald-400"></i> Naadloze API-integratie (BIM/ERP)</li>
-                        <li class="flex items-center gap-4 text-lg"><i class="fa-solid fa-check-circle text-emerald-400"></i> Bulk-verwerking van volledige archieven</li>
-                        <li class="flex items-center gap-4 text-lg"><i class="fa-solid fa-check-circle text-emerald-400"></i> Maandelijkse ESG-audit rapportages</li>
-                    </ul>
+            <!-- Pay-per-Project -->
+            <div class="bg-white rounded-3xl p-8 md:p-10 border border-gray-200 shadow-sm hover:shadow-xl transition-shadow flex flex-col">
+                <div class="mb-8">
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Pay-per-Project</span>
+                    <h2 class="text-4xl font-black text-gray-900 mt-6 mb-2">Vanaf € 950</h2>
+                    <p class="text-gray-500 font-medium">Eenmalige investering per gebouw</p>
                 </div>
-                <a href="offerte.html" class="relative z-10 block w-full text-center bg-white text-emerald-900 font-bold py-5 rounded-2xl hover:bg-emerald-50 transition-all text-xl shadow-lg">Licentie Aanvragen</a>
+                <p class="text-gray-600 mb-8 leading-relaxed">Ideaal voor onafhankelijke aannemers of projectontwikkelaars met incidentele transformatie- of sloopprojecten.</p>
+                <ul class="space-y-4 mb-10 flex-grow">
+                    <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i><span class="text-gray-700">1 Compleet Materialenpaspoort</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i><span class="text-gray-700">AI-Analyse van 2D Tekeningen & PDF's</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i><span class="text-gray-700">Inclusief Financiële Restwaarde Calculatie</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i><span class="text-gray-700">Export naar CSV en PDF</span></li>
+                </ul>
+                <a href="offerte.html" class="w-full block text-center bg-white border-2 border-gray-200 text-gray-800 font-bold py-4 rounded-xl hover:bg-gray-50 transition-colors">Offerte op maat</a>
             </div>
 
-            <div class="bg-white rounded-3xl p-8 md:p-12 border border-gray-200 shadow-sm flex flex-col">
-                <div class="flex-grow">
-                    <h2 class="text-3xl font-bold text-emerald-900 mb-4">Pay-per-Project</h2>
-                    <p class="text-gray-600 mb-8 text-lg leading-relaxed">Heeft u een eenmalige renovatie of sloop? Gebruik onze AI-analyse flexibel per project zonder vaste maandlasten.</p>
-                    
-                    <div class="mb-10">
-                        <span class="text-gray-500 text-lg">Vanaf</span>
-                        <span class="text-5xl font-extrabold text-emerald-900 ml-1">€950</span>
-                        <span class="text-gray-500 text-xl">/ project</span>
-                    </div>
-
-                    <div class="bg-slate-50 rounded-2xl p-6 mb-8 border border-gray-100">
-                        <h4 class="font-bold text-emerald-900 mb-2 italic">Persoonlijk voorstel:</h4>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            Bovenstaande startprijs is een indicatie. Voor een <b>gedetailleerd en uitgesplitst voorstel</b> raden wij aan een offerte aan te vragen. Wij kijken dan specifiek naar de m², de complexiteit van de tekeningen en uw specifieke rapportage-behoeften.
-                        </p>
-                    </div>
+            <!-- Enterprise SaaS -->
+            <div class="bg-emerald-900 rounded-3xl p-8 md:p-10 border border-emerald-800 shadow-2xl flex flex-col relative overflow-hidden transform md:-translate-y-4">
+                <div class="absolute top-0 right-0 bg-emerald-500 text-white text-xs font-bold px-4 py-1 rounded-bl-xl uppercase tracking-wider">Meest Gekozen</div>
+                <div class="mb-8 relative z-10">
+                    <span class="bg-emerald-800 text-emerald-100 px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Enterprise Licentie</span>
+                    <h2 class="text-4xl font-black text-white mt-6 mb-2">€ 2.500 <span class="text-xl font-medium text-emerald-400">/mnd</span></h2>
+                    <p class="text-emerald-400 font-medium">Jaarlijks gefactureerd</p>
                 </div>
-
-                <div class="mt-auto">
-                    <a href="offerte.html" class="block w-full text-center bg-emerald-100 text-emerald-900 border-2 border-emerald-200 font-bold py-5 rounded-2xl hover:bg-emerald-200 transition-all text-xl">
-                        Vraag een Offerte Aan <i class="fa-solid fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
+                <p class="text-emerald-100 mb-8 leading-relaxed relative z-10">De volledige suite voor grote vastgoedeigenaren en top-tier bouwbedrijven die continu CSRD-compliant moeten zijn.</p>
+                <ul class="space-y-4 mb-10 flex-grow relative z-10">
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-emerald-400 mt-1 mr-3"></i><span class="text-white">Ongelimiteerd aantal projecten & paspoorten*</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-emerald-400 mt-1 mr-3"></i><span class="text-white font-semibold">150 GB Fair Use Dataverwerking per maand</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-emerald-400 mt-1 mr-3"></i><span class="text-white">Priority "Human-in-the-Loop" Validatie</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-emerald-400 mt-1 mr-3"></i><span class="text-white">API Integratie met uw eigen ERP-systemen</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-emerald-400 mt-1 mr-3"></i><span class="text-white">Toegang tot Enterprise Support (SLA)</span></li>
+                </ul>
+                <a href="offerte.html" class="w-full block text-center bg-emerald-400 text-emerald-950 font-bold py-4 rounded-xl hover:bg-emerald-300 transition-colors relative z-10 shadow-lg">Start Enterprise Licentie</a>
             </div>
 
         </div>
-    </section>
+
+        <!-- Disclaimer / Fair Use Policy -->
+        <div class="max-w-4xl mx-auto mt-16 bg-emerald-50 border border-emerald-100 rounded-2xl p-6 md:p-8">
+            <div class="flex items-start gap-4">
+                <div class="text-emerald-600 mt-1">
+                    <i class="fa-solid fa-circle-info text-2xl"></i>
+                </div>
+                <div>
+                    <h4 class="text-emerald-900 font-bold text-lg mb-2">* Fair Use Policy & Datagebruik</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-3">
+                        Het verwerken van complexe architectonische blauwdrukken en CAD-modellen via Multimodale AI vereist aanzienlijke servercapaciteit. Om de snelheid en betrouwbaarheid van ons platform voor alle gebruikers te garanderen, is de Enterprise Licentie voorzien van een ruime <strong>Fair Use datalimiet van 150 GB verwerkte brondata per maand</strong>. Dit is ruim voldoende voor tientallen grootschalige projecten.
+                    </p>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        Verbruikt u in een uitzonderlijke piekmaand meer capaciteit? Geen probleem. Overschrijdingen worden transparant gefactureerd via <em>metered billing</em> tegen een vast tarief van <strong>€15,- per extra verwerkte GB</strong>. U behoudt altijd inzicht in uw verbruik via het dashboard.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-emerald-100 py-8 border-t border-emerald-900 text-center">
+        <p class="text-sm text-emerald-400/60">&copy; 2026 ReBuild AI. Alle rechten voorbehouden.</p>
+    </footer>
 
 </body>
 </html>
